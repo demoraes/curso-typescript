@@ -11,7 +11,7 @@ let funcionarios = {
     }
 };
 console.log(funcionarios.supervisores);
-console.log(funcionarios.baterPonto(10));
+console.log(funcionarios.baterPonto(9));
 // type IcontaBancaria = {
 //     saldo: number,
 //     depositar: (valor:number) => void

@@ -1,7 +1,10 @@
-let funcionarios: {
+type Ifuncionarios = {
     supervisores: string[],
     baterPonto: (hora: number) => string 
-} = {
+}
+
+
+let funcionarios: Ifuncionarios = {
     supervisores: ['gabriel','marcelo'],
     baterPonto(hora: number): string {
         if(hora <= 8) {
@@ -13,7 +16,7 @@ let funcionarios: {
 }
 
 console.log(funcionarios.supervisores);
-console.log(funcionarios.baterPonto(10));
+console.log(funcionarios.baterPonto(9));
 
 
 
