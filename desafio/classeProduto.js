@@ -10,8 +10,11 @@ class Produto {
         this.preco = preco;
         this.desconto = desconto;
     }
+    resumo() {
+        return `${this.nome} custa R$${this.preco} (${this.desconto})`;
+    }
 }
 const produto = new Produto('Bolacha', 11);
+console.log(produto.resumo());
 const produto2 = new Produto('Feijão', 50, 50);
-console.log(produto);
-console.log(produto2);
+console.log(produto2.resumo());
