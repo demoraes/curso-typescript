@@ -6,14 +6,18 @@
 
 class Produto {
     constructor(public nome: string,public preco: number,
-        public desconto: number = 2) {}
+        public desconto: number = 0) {}
+
+    public precoDesconto(): number {
+        return this.preco * (1 - this.desconto);
+    }
 
     public resumo() {
-        return `${this.nome} custa R$${this.preco} (${this.desconto})`
+        return `${this.nome} custa R$ ${this.precoDesconto()} com desconto`
     }
 }
 
-const produto = new Produto('Bolacha',11)
+const produto = new Produto('Bolacha',50)
 console.log(produto.resumo())
-const produto2 = new Produto('Feijão', 50, 50)
+const produto2 = new Produto('Feijão', 100, 0.05)
 console.log(produto2.resumo())
