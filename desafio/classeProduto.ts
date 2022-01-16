@@ -21,3 +21,5 @@ const produto = new Produto('Bolacha',50)
 console.log(produto.resumo())
 const produto2 = new Produto('Feijão', 100, 0.05)
 console.log(produto2.resumo())
+
+
