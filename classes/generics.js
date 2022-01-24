@@ -1,5 +1,6 @@
 "use strict";
 // Class com Generics
+// Soma de numeros
 class OperacaoBinaria {
     constructor(operando1, operando2) {
         this.operando1 = operando1;
@@ -13,6 +14,7 @@ class SomaBinaria extends OperacaoBinaria {
 }
 console.log(new SomaBinaria(3, 69).executar());
 console.log(new SomaBinaria(30, 434).executar());
+// Diferença entre datas
 class DiferencaEntreDatas extends OperacaoBinaria {
     getTime(data) {
         let { dia, mes, ano } = data;

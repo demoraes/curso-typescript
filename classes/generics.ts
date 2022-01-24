@@ -1,4 +1,5 @@
 // Class com Generics
+// Soma de numeros
 abstract class OperacaoBinaria<T, R> {
     constructor(public operando1: T,
         public operando2: T) {}
@@ -15,6 +16,7 @@ class SomaBinaria extends OperacaoBinaria<number, number> {
 console.log(new SomaBinaria(3,69).executar())
 console.log(new SomaBinaria(30,434).executar())
 
+// Diferença entre datas
 class DiferencaEntreDatas extends OperacaoBinaria<Data, string> {
     getTime(data: Data): number {
         let { dia, mes, ano } = data
